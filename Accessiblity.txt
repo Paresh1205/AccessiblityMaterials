@@ -1,0 +1,169 @@
+perceivable- visible to vision
+operable:make ur app accessible through keyboard,mouse,joystick.
+understandable:web content should to easy to understand.
+robust:app should work on all platform,
+phone xs sm md xl
+
+
+-----------------------------
+1623529780
+----------------------------
+Accessive technologies is set of tools to access applications and to help them, to use the applications.
+	This helps disabled peoples to use the website.
+
+below are screen reader
+
+wave for firefox and chrome it's browser extension not screen reader
+axe is browser extension for chrome and firefox too.
+talk back all devices
+voiceover -IE
+jaws with desktop ie
+nvda firefox and chrome
+chrome vox with chrome only
+-----------------------------------
+
+interacting with elements press enter key
+
+interacting with checkbox and radio button space key
+
+--------------------------------------------------------------------------------------------------
+Date-28-5-2019 11:30 A.M-12:30 P.M
+Subject-AX Training
+
+HTML&Accessiblity
+
+HTML5 markups play imp role in accessiblity.
+easies to develop when we use html5 semantics.
+SEO(search engine optimisation)
+
+Use of semantics in accessiblity:
+	-Avoid using font instead use <h>tag
+	-Avoid using br tag instead use p tag
+	-If list is required use ordered list or unordered list don't use br tag continuously to create list
+	
+
+Page Layouts:->
+	-Whenever u are creating payge layout don't use table to create the page layout.
+	-Follow basic html5 semantic tags
+	
+Using Clear Languages:->
+	
+	-OffScreen text-Read more button that hides text when u click on it you will see the further information.
+	-Top-left to bottom right the reading of web page is done.
+	-focus is only on intercactive elements(e.g-buttons and all the interactive elements hyperlinks)
+	
+How browser knows which is first second hyperlinks:-	
+	-Off screen text come into picture.i.e description of hyperlink(focus)
+	-href=# or href="javascript:void(0) when no hyperlink is there.
+	-<span> class name is a11y and give the description in style tag as .a11y{ } this will hide the text behind hyperlink
+	-be sure about spellings write januay instead of jan.\
+
+2 jobs in development
+In development develop or assesment to assest the wbsite
+
+Semantics:->
+	<blockquote>-coated from another source
+-------------------------------------------------------------------------------------------
+Date-29/5/2019 		Time:11 A.M
+
+Importance of HTML 5
+
+=>UI controls-
+web parts of html that user interacts with.
+e.g buttons,links,textbox,checkbox,radio btn.
+
+label ur form controls with label tag.
+meaningfull text labels->labels which give useful  information
+
+=>building keyboard accessiblity
+tab index 0 and tab index -1
+	tabindex='0'->it will not initialize any tab value.
+	tabindex='-1'->hide the focus from keyboard.
+	
+To focus element using .focus() make sure u use tabindex='0'
+e.g $('h1').attr('tabindex','0').focus();
+
+=>meaningful text labels
+	labels which give useful  information
+
+=>text alternatives
+ for img use alt text.
+ describe the purpose of images same goes for images and videos.
+ for images- alt to give info about images
+ for videos- CC(closed captions) in youtube so disabled can go through subtitles.
+ for audios-transcript text
+
+=>Empty alt Attributes:
+ images that are use for decoration purpose and keep alt as empty.
+
+ longdesc:pass .html file
+
+ instead of giving longdesc we ca use <figure> tag.
+ inside fig tag you can use <img> tag and <figurecaption> tag.
+ 
+ in hyperlink target="_blank" this will open new window.
+ advance warning text for external links
+
+ skip links->Skip to main content.
+
+ Accessible data table:
+ 1)Caption text in table-describe the purpose of table. just after table tag <caption></caption>
+ 2)Heading: using <th> tag
+ 3)connect each column with header.
+ 	scope attributes: if scope="col" it means whole column and if scope="row" it means whole row is considered.
+
+--------------------------------------------------------------------------------------------------
+Date-31-5-2019 			Time-11:30 A.M
+
+ARIA-Accessible Rch Internet Apprications
+Wherever there is restriction in changing dom structure or html structure we can use the ARIA Properties.
+
+
+WAI-ARIA features
+1-roles
+2-properties
+3-states
+
+When you should use ARIA?
+Make minimal usage of ARIA attributes
+->Signposts/Landmarks:
+
+Aria-role alert
+
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles
+
+Aria Global States and properties
+1)Aria-atomic:
+	indicates weather
+2)Aria-Busy(state)
+3)Aria-controls
+4)Aria-describedy:-when u want to give extra information just pass the id.value of this property is id.
+5)Aria-dropeffect
+6)Aria-readonly:-values will be true or false.disabled text field,text area in forms
+7)Aria-disabled:-
+8)Aria-hidden:-scr
+9)Aria-invalid-
+10)Aria-label
+11)Aria-live->polite=It updates the memory content after the screen reader is done finishing
+	    ->assertive=it will stop the screen reader previous reading and start reading from 				new content directly
+12)Aria-owns-identify relation between parent-child hierachy
+13)Aria-hashpopup-modal or popup windows
+14)Aria-checked
+15)Aria-valuenow:used in SLider to update the value.
+
+
+---------Level A--------------
+
+1.1.1-Non-text Content
+
+1.1.2 Audio-only and video-only(pre-Recorded)
+
+1.2.1
+-------------------------------------
+
+color contrast checker
+
+
+
+
+
