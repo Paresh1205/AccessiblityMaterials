@@ -17,7 +17,7 @@
 
 <body class="container">
     <header>
-        <a href="#content">Skip Main Content>></a>
+        <a href="#skipContent">Skip Main Content>></a>
         <article class="col-md-12">
             <section class="col-xs-12 col-sm-12 col-md-6" id="quote1">
                 <h1>Interestingbooks.com</h1>
@@ -71,8 +71,8 @@
     <article class="col-xs-12 col-sm-12 col-md-12" id="d">
         <section class="col-sm-12 col-md-12" id="d1">
             <p>Search our online library of books</p>
-            <input type="text" placeholder="Search library" name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search library" name="search" aria-autocomplete="list">
+            <button role="button" type="submit" aria-disabled="false"><i class="fa fa-search"></i></button>
         </section>
     </article>
 
@@ -99,10 +99,11 @@
         </section>
     </article>
 
-    <br>
-    <hr class="col-xs-12 col-sm-12 col-md-12">
+    <p>
+        <hr class="col-xs-12 col-sm-12 col-md-12">
+    </p>
 
-    <main id="content">
+    <main id="skipContent">
         <article class="col-xs-12 col-sm-12 col-md-12" id="f">
 
             <section class="col-md-7">
