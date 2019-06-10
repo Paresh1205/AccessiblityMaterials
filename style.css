@@ -39,7 +39,7 @@ nav,#nav{
     display: inline-block;
 }
 #c>section{
-    margin: 90px 0px;
+    margin: 77px 0px 0px;
 }
 #c>img{
     margin: 17px 0px 17px;
@@ -78,7 +78,7 @@ nav,#nav{
     text-align: center;
 }
 
-#d1>p{
+#d1>label{
     display: inline-block;
 }
 
@@ -114,13 +114,13 @@ nav,#nav{
 #ee>section{
     margin: 37px 2px 7px;
 }
-#ee>section>aria-labelledby{
+#ee>section>label{
     color: #69caa0;
     font-weight: 500;
     font-size: x-large;
 }
 
-#ee>section>a{
+#ee>section>#addcart{
     border: 1px solid #3a775d;
     background: #69caa0;
     color: white;
@@ -129,7 +129,18 @@ nav,#nav{
     border-radius: 5px;
     float: right;
 }
-
+#ee section a{
+    color: #69caa0;
+    text-decoration: none;
+}
+.a11y{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px,1px,1px,1px)
+}
 #signup{
     color: #69caa0;
     font-weight: 300;
@@ -150,7 +161,7 @@ nav,#nav{
 #g{
     margin-top: 25px;
 }
-#g>aria-labelledby{
+#g>label{
     margin-left: 16px;
     font-size: larger;
     font-weight: 500;
@@ -174,7 +185,7 @@ nav,#nav{
     border: 1px solid #b7b7b7;
     padding: 0px 18px 0px;
 }
-#gg div aria-labelledby{
+#gg div label{
     color: #69caa0;
     font-weight: 500;
     font-size: x-large;
@@ -229,6 +240,15 @@ footer{
     #g_1,#g_2,#g_3{
         margin: 10px 0px 10px;
     }
+    #c section h2{
+        font-size: 30px;
+    }
+    #c>section>p {
+        font-size: 16px;
+    }
+    #c>section {
+        margin: 16px 0px 27px;
+    }
 }
 @media (max-width: 768px){
     header>article>section,header>article>#quote{
@@ -249,10 +269,25 @@ footer{
     #f section img{
         display: none;
     }
-    
+    #g_1>section,#g_2>section,#g_3>section{
+        display: inline-block;
+    }
+    #c section p{
+        font-size: 15px;
+        margin:0px;
+    }
+    #c section a{
+     border: 1px solid #3a775d;
+     background: #69caa0;
+     color: white;
+     padding: 7px 20px 4px;
+     text-decoration: none;
+     border-radius: 5px;
+    }
 }
 
-@media (max-width: 200px){
+
+@media (max-width: 200px ){
     header>article>#quote{
         width: 50%;
         text-align: center;
